@@ -2,11 +2,16 @@
 
 namespace helloworld
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CreateMessage());
+            WriteMessage(CreateMessage());
+        }
+
+        public static void WriteMessage(string message)
+        {
+            Console.WriteLine(message);
         }
 
         public static string CreateMessage()
