@@ -19,4 +19,9 @@ namespace helloworld
             return "Hello World";
         }
     }
+
+    public interface IMessageWriter
+    {
+        void WriteMessage(string message);
+    }
 }
