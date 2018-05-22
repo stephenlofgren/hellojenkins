@@ -4,6 +4,7 @@ namespace helloworld
 {
     public class Program
     {
+        IMessageWriter writer {get;set;}
         static void Main(string[] args)
         {
             WriteMessage(CreateMessage());
@@ -23,5 +24,13 @@ namespace helloworld
     public interface IMessageWriter
     {
         void WriteMessage(string message);
+    }
+
+    public class ConsoleMessageWriter
+    {
+        public void WriteMessage(string message)
+        {
+            Console.WriteLine(message);
+        }
     }
 }
