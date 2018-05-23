@@ -4,7 +4,7 @@ using helloworld;
 
 namespace test
 {
-    public class UnitTest1
+    public class ProgramShould
     {
         [Fact]
         public void Test1()
